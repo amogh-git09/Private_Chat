@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Private Chat"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:textColor="@color/register_color"
+        android:textSize="30dp"
+        android:paddingTop="25dp"/>
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:capitalize="words"
+            android:layout_weight="1"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="18dp"
+            android:background="@color/register_button_color"
+            android:textColor="@color/register_button_text_color"
+            android:onClick="register"/>
+
+</LinearLayout>
